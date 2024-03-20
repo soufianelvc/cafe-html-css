@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header {
+            height: 625px;
+            width: 100%;
+            background-image: url(aa.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: flex;
+        }
+
+        .blue img {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-top: 23px;
+            margin-left: 10px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            margin-right: 500px;
+        }
+
+        header .ken {
+            color: rgb(255, 255, 255);
+            margin-left: 20px;
+            margin-top: 10px;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        header .man {
+            color: orange;
+            margin-top: 10px;
+            font-weight: bolder;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .nac {
+            display: flex;
+            margin-top: 20px;
+            font-size: large;
+            font-weight: bolder;
+            list-style-type: none;
+        }
+
+        .nac li {
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 3px rgb(255, 255, 255);
+            margin-left: 15%;
+            height: 25px;
+        }
+
+        .bluee {
+            margin-left: 12%;
+            margin-top: 20px;
+        }
+
+        .bluee img {
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+        }
+
+        .hh {
+            position: relative;
+            right: 85%;
+            top: 40%;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: aliceblue;
+            width: 650px;
+        }
+
+        .hhh {
+            position: relative;
+            right: 88%;
+            top: 6%;
+        }
+
+        h3 {
+            font-size: 20px;
+            right: 57%;
+            top: 52%;
+            position: absolute;
+            color: rgb(223, 205, 167);
+            width: 600px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .h4 {
+            position: relative;
+            right: 128%;
+            top: 6%;
+        }
+
+        h4 {
+            font-size: 20px;
+            top: 60%;
+            position: absolute;
+            color: rgb(175, 175, 175);
+            width: 160px;
+            background-color: orange;
+            color: white;
+            height: 30px;
+            text-align: center;
+        }
+
+        section {
+            height: 600px;
+            background-color: rgb(51, 53, 76);
+        }
+
+        .soch {
+            width: 60px;
+            margin-left: 15px;
+        }
+
+        .soche {
+            list-style-type: none;
+            position: relative;
+            display: flex;
+            right: 125%;
+            top: 75%;
+        }
+
+        .about {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            transform: translateY(100px);
+        }
+
+        .mem {
+            text-align: center;
+            display: inline-block;
+            transform: translate(350%, 120px);
+            color: aliceblue;
+        }
+
+        .memm {
+            text-align: center;
+            display: inline-block;
+            transform: translate(256%, 120px);
+            color: orange;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+            margin-top: 250px;
+            margin-left: 20px;
+            border: none;
+        }
+
+        #b {
+            border-radius: 15px;
+        }
+
+        .p {
+            color: white;
+            width: 800px;
+            font-size: 25px;
+            margin-left: 450px;
+            margin-top: 245px;
+            word-spacing: 4px;
+            line-height: 45px;
+            text-align: justify;
+        }
+
+        .facility {
+            height: 600px;
+            background-color: rgb(218, 219, 220);
+        }
+
+        .aboutt {
+            text-align: center;
+            color: rgb(51, 53, 76);
+            transform: translateY(100px);
+        }
+
+        .memt {
+            text-align: center;
+            display: inline-block;
+            transform: translate(570%, 120px);
+            color: rgb(51, 53, 76)
+        }
+
+        .memmt {
+            text-align: center;
+            display: inline-block;
+            transform: translate(420%, 120px);
+            color: orange;
+        }
+
+        #article {
+            display: flex;
+            margin-left: 5%;
+            padding-top: 15%;
+        }
+
+        .article1 {
+            width: 30%;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            margin-right: 2.5%;
+            border-radius: 15px;
+            box-shadow: 5px 6px 15px black;
+        }
+
+        .article2 {
+            width: 30%;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            margin-right: 2.5%;
+            border-radius: 15px;
+            box-shadow: 5px 6px 15px black;
+        }
+
+        .article3 {
+            width: 30%;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            border-radius:
+                15px;
+            box-shadow: 5px 6px 15px black;
+        }
+
+        .article1 img {
+            width: 100%;
+            height: 90%;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .article3 h1 {
+            text-align: center;
+            background-color: white;
+            border-radius: 0 0 15px 15px;
+            height: 30px;
+        }
+
+        .article2 h1 {
+            text-align: center;
+            background-color: white;
+            border-radius: 0 0 15px 15px;
+            height: 30px;
+        }
+
+        .article1 h1 {
+            text-align: center;
+            background-color: white;
+            border-radius: 0 0 15px 15px;
+            height: 30px;
+        }
+
+        .article3 img {
+            width: 100%;
+            height: 90%;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .article2 img {
+            width: 100%;
+            height: 90%;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .Cafe_menu {
+            height: 600px;
+            background-color: rgb(51, 53, 76);
+        }
+
+        #h11 {
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-size: xx-large;
+        }
+
+        .coffecup {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .coffecup article {
+            width: 23%;
+            background-color: gray;
+            margin-top: 2%;
+            border-radius: 2%;
+            margin-bottom: 2%;
+        }
+
+        .coffecup article img {
+            width: 60%;
+            border-radius: 50%;
+            margin-top: 8%;
+            margin-left: 20%;
+            padding: 3px;
+            background-color: white;
+        }
+
+        .coffecup article h1 {
+            text-align: center;
+            margin-top: 5%;
+            color: rgb(255, 255, 255);
+        }
+
+        .coffecup article p {
+            text-align: center;
+            margin-top: 10%;
+            color: wheat;
+        }
+
+        .button {
+            width: 80%;
+            height: 40px;
+            border-radius: 5%;
+            background-color: orange;
+            margin-top: 25%;
+            margin-left: 10%;
+        }
+
+        .Cafe_menuu {
+            margin-top: 120px;
+        }
+
+        .hrx {
+            padding-top: 3%;
+        }
+
+        footer {
+            height: 700px;
+            background-color: orange;
+            margin-top: 120px;
+        }
+
+        .footer1 {
+            text-align: center;
+            padding-top: 5%;
+            color: white;
+        }
+
+        .footer2 {
+            text-align: center;
+        }
+
+        iframe {
+            padding-top: 60px;
+            padding-left: 10px;
+        }
+
+        aside {
+            display: flex;
+        }
+
+        .form {
+            width: 10px;
+            height: 10px;
+            margin-right: 2px;
+            margin-top: 150px;
+            margin-left: 40px;
+        }
+
+        input {
+            margin-left: 20px;
+        }
+
+        textarea {
+            margin-left: 70px;
+        }
+
+        .formm {
+            width: 10px;
+            height: 10px;
+            margin-left: 40px;
+        }
+
+        .restt {
+            margin-left: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: red;
+            color: white;
+        }
+
+        .submit {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <header>
+        <h1 class="ken">Former</h1>
+        <h1 class="man">Memories</h1>
+        <div class="blue"><img src="blue_tag.png" alt=""></div>
+        <ul class="nac">
+            <li>Home</li>
+            <li>About</li>
+            <li>Menu</li>
+            <li>Contact</li>
+        </ul>
+        <div class="bluee"><img src="magnified.png" alt=""></div>
+
+        <div class="hh">
+            <h2>Let's Enjoy a Cup Coffee <br> in the morning.</h2>
+        </div>
+        <div class="hhh">
+            <h3>A cup of coffee gives you inspiration.</h3>
+        </div>
+        <div class="h4">
+            <h4>Bells Now</h4>
+        </div>
+        <ul class="soche">
+            <li><a href="https://www.facebook.com/sofian.eroukimasawi"><img src="facbook.png" class="soch"></a></li>
+            <li><a href="https://wa.me/qr/Z4S47F5OU4NHB1"><img src="whatssap.png" class="soch"></a></li>
+            <li><a href="https://twitter.com/eroukisoufian"><img src="twitter.png" class="soch"></a></li>
+            <li><a href="https://m.youtube.com/channel/UCdCuIUEvc_WLZIu-rdqghyw"><img src="youtube.png"
+                        class="soch"></a></li>
+            <li><a href=""><img src="instagram.png" class="soch"></a></li>
+        </ul>
+    </header>
+    <section>
+        <h1 class="about">About Us</h1>
+        <h1 class="mem">Former </h1>
+        <h1 class="memm"> Memories</h1>
+        <div class="gallery"><img src="b.jpg" id="b" width="400px"></div>
+        <p class="p">Mengangan Mantan is a cafe that provides a variety of coffee drinks,starting from domestic coffee.
+            Not only do we provide coffee,our cafe also provides snacks or typical local food.
+            former memories, provides several facilities such as internet, playground, meeting area, and others.</p>
+    </section>
+    <section class="facility">
+        <h1 class="aboutt">Facility</h1>
+        <h1 class="memt">Former </h1>
+        <h1 class="memmt"> Memories</h1>
+        <div id="article">
+            <article class="article1"><img src="toilet_rom.jpg">
+                <h1>Toilet Room</h1>
+            </article>
+            <article class="article2"><img src="bedroom.jpg">
+                <h1>Bed Room</h1>
+            </article>
+            <article class="article3"><img src="game_room.jpg">
+                <h1>Game Room</h1>
+            </article>
+        </div>
+    </section>
+    <section class="Cafe_menu">
+        <h1 id="h11">Cafe menu</h1>
+        <hr id="hr1">
+        <section class="coffecup">
+            <article><img src="cup1 (1).jpeg" alt="">
+                <h1>-Lampung coffee-</h1>
+                <p>Price:5$</p>
+                <input type="button" value="Buy now" class="button">
+            </article>
+            <article><img src="cup2.jpeg" alt="">
+                <h1>-Bali coffee-</h1>
+                <p>Price:30$</p>
+                <input type="button" value="Buy now" class="button">
+            </article>
+            <article><img src="cup3.jpeg" alt="">
+                <h1>-Java coffee-</h1>
+                <p>Price:4$</p>
+                <input type="button" value="Buy now" class="button">
+            </article>
+            <article><img src="cup4.jpeg" alt="">
+                <h1>-Toraja coffee-</h1>
+                <p>Price:14$</p>
+                <input type="button" value="Buy now" class="button">
+            </article>
+        </section>
+    </section>
+    <section class="Cafe_menuu">
+        <hr id="hrx">
+        <h1 id="h11">Food And Snacks</h1>
+        <hr id="hr1">
+        <section class="coffecup">
+            <article><img src="Food1.jpeg" alt="">
+                <h1>-Bananes frites-</h1>
+                <p>Price:15$</p>
+                <input type="button" value="Buy now" class="button">
+            </article>
+            <article><img src="Food2.jpeg" alt="">
+                <h1>-Griller-</h1>
+                <p>Price:40$</p><input type="button" value="Buy now" class="button">
+            </article>
+            <article><img src="Food3.jpeg" alt="">
+                <h1>-Frites-</h1>
+                <p>Price:19$</p><input type="button" value="Buy now" class="button">
+            </article>
+            <article><img src="Food4.jpeg" alt="">
+                <h1>-Onion Ring-</h1>
+                <p>Price:45$</p><input type="button" value="Buy now" class="button">
+            </article>
+        </section>
+    </section>
+    <footer>
+        <h1 class="footer1">Contact</h1>
+        <h1 class="footer2">FormerMemories</h1>
+        <aside><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105816.68568487151!2d-5.084142345352956!3d34.02407765187287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f8b484d445777%3A0x10e6aaaeedd802ef!2sFes%2C%20Morocco!5e0!3m2!1sen!2sus!4v1684869818303!5m2!1sen!2sus"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div>
+                <form>
+                    <label for="usernam"><img src="username.png" class="form"></label><input type="text"
+                        placeholder="usernam" id="usernam" height="150px"><br><br>
+                    <label for="email"><img src="email.png" class="formm"></label><input type="email"
+                        placeholder="your email" id="email"><br><br>
+                    <label for="date"><img src="date.png" class="formm"></label><input type="date" id="date"><br><br>
+                    <textarea cols="30" rows="3"></textarea> <br><br><input type="reset" value="RESET"
+                        class="restt"><input type="submit" value="SUBMIT" class="submit">
+                </form>
+            </div>
+        </aside>
+    </footer>
+</body>
+
+</html>
